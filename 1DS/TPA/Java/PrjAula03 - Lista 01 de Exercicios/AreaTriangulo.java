@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class AreaTriangulo {
      public static void main (String[] args) {
     	 
-    	 //criando um scanner chamado ler
+    	
     	 Scanner ler = new Scanner(System.in);
     	 
     	double base, h, area;
@@ -16,7 +16,7 @@ public class AreaTriangulo {
     	h = ler.nextDouble();
     	
     	area = (base*h)/2;
-    	System.out.println("Sua área é: "+ area);
+    	System.out.println("Sua ï¿½rea ï¿½: "+ area);
     	ler.close();
     			
     			
