@@ -1,0 +1,266 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #0f172a;
+    color:  #1e293b;
+    line-height: 1.5;
+    /* padding: -32px -16px; */
+    flex: 1;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    /* scroll-snap-type: y mandatory; */
+    /* scroll-snap-align: start; */
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 27px;
+    padding: 10px;
+    /* background: linear-gradient(135deg, #0f172a 0%, #14532d 40%, #22c55e 75%, #ccff00 100%); */
+    background: linear-gradient(135deg, #18181b 0%, #27272a 35%, #064e3b 70%, #84cc16 100%);
+    color: white;
+    border-radius: 19px;
+    box-shadow: 0 9px 60px -1px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 35px;
+    margin-bottom: 4px;
+}
+
+
+
+.card {
+    background: #27272a;
+    border-radius: 10px;
+    padding: 25px;
+    margin-bottom: 26px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    /* border: 1px solid  #e2e8f0; */
+    color: beige;
+    scroll-margin-top: 80px;
+}
+
+.card h2 {
+    color: #0f766e;
+    font-size: 30px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid  #e2e8f0;
+    padding-bottom: 8px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 19px;
+}
+
+
+
+table {
+    width: 100%;
+    margin-top: 8px;
+}
+
+
+th {
+    background-color: #3d3a3a;
+    color: beige;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #352d41;
+}
+
+
+.links a {
+    color: #0284c7;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.links a:hover {
+    color:  #0284c7;
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Estilos do Footer */
+.footer {
+    /* background: linear-gradient(135deg, #D8DDE5  0%, #AFC1D4 100%); */
+    /* background: linear-gradient(135deg, #0f766e 0%, #0369a1 100%); */
+    background: linear-gradient(135deg, #18181b 0%, #27272a 35%, #064e3b 70%, #84cc16 100%);
+    color: #ffffff;
+    margin-top: 40px;
+    border-radius: 12px 12px 0 0;
+                scroll-snap-align: start;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    flex: 1;
+}
+
+.footer-info h3 {
+    font-size: 25px;
+    /* margin-bottom: 8px; */
+}
+
+.footer-info p {
+    font-size: 15px;
+}
+
+.footer-links h4 {
+    font-size: 20px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    padding-left: 0;
+}
+
+
+.footer-links a {
+    color: #e2e8f0;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.2s ease, padding-left 0.2s ease;
+    display: inline-block;
+}
+
+.footer-links a:hover {
+    color: #38bdf8;
+    padding-left: 4px;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 15px;
+    border-top: 5px solid rgba(255, 255, 255, 0.15);
+    font-size: 15px;
+}
+
+
+
+.CIMG{
+    text-align: center;
+}
+
+.CIMG2{
+    justify-content: space-between;
+    display: flex;
+    padding-inline: 5%;
+    text-align: center;
+}
+
+.perfil-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2a0268;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.perfil-img2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #2a0268;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1rem;
+}
+
+.botao-volta a {
+    display: inline-block;
+    color: #e2e8f0;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.2s ease;
+}
+
+.botao-volta a:hover {
+    color: #84cc16;
+    text-decoration: underline;
+}
+
+
+
+
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+/* @keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: scale(0.9) translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+
+
+}
+section {
+  animation: aparecer linear both;
+  animation-timeline: view();
+  animation-range: entry 20% cover 40%;
+} */
+
+@keyframes surgirESumir {
+  /* 0% (Entrando por baixo): Fica invisível e menor */
+  0% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  
+  /* 30% até 70% (No meio da tela): Fica totalmente visível e no tamanho normal */
+  30%, 70% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* 100% (Saindo por cima): Fica invisível e menor de novo */
+  100% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+}
+
+section {
+  animation: surgirESumir linear both;
+  animation-timeline: view();
+  
+  /* "cover" diz que a animação vai durar desde o momento em que 
+     a seção aponta na borda de baixo até ela sumir totalmente no topo */
+  animation-range: cover;
+}
